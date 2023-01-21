@@ -1,0 +1,33 @@
+.loadingFather {
+  margin: 0;
+  padding: 0 0 56px 0;
+}
+
+.LoadingBox {
+  border-radius: 16px;
+  background-color: #FAFAFA;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  z-index: 1;
+  animation: loading-skeleton infinite 1.3s reverse;
+}
+
+@keyframes loading-skeleton {
+
+  0%,
+  100% {
+    opacity: 0%;
+  }
+
+  25% {
+    opacity: 50%;
+  }
+
+  25% {
+    opacity: 100%
+  }
+}

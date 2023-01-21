@@ -7,6 +7,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 label {
@@ -28,6 +29,7 @@ textarea {
   padding: 12px;
   height: 96px;
   width: calc(100% - 25px);
+  border-radius: 10px;
 }
 
 textarea::placeholder {
@@ -62,10 +64,20 @@ textarea:focus {
 }
 
 .TodoForm-button--add {
+  border-radius: 10px;
   background: #61DAFA;
   box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
 }
 
+.TodoForm-button--add:hover {
+  background: grey;
+}
+
 .TodoForm-button--cancel {
-  background: transparent;
+  border-radius: 10px;
+  background: tomato;
+}
+
+.TodoForm-button--cancel:hover {
+  background: grey;
 }
