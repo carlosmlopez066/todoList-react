@@ -22,6 +22,11 @@ function TodoForm() {
     setOpenModal(false);
 
   };
+  window.addEventListener("keydown", (event) => {
+    if (event.code === "Enter") {
+      onSubmit(event)
+    }
+  });
   return (
     <form onSubmit={onSubmit}>
       <label>Escribe tu TODO</label>
@@ -45,9 +50,11 @@ function TodoForm() {
         >
           Añadir
         </button>
+
       </div>
     </form >
   )
+
 }
 
 export { TodoForm };
